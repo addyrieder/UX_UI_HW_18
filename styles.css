@@ -1,0 +1,192 @@
+/* Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto Mono', sans-serif;
+    background: #fce7d5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background-color: #fff;
+}
+
+
+
+.cursor {
+    width: 24px;
+    height: 24px;
+    background-color: #e983fd;
+    border-color: #e789ff;
+    mix-blend-mode: multiply
+}
+
+.cursor body.dark {
+    background-color: #e789ff;
+    border-color: #e789ff;
+    mix-blend-mode: difference
+}
+
+.cursor-dot {
+    width: 4px;
+    height: 4px;
+    background-color: #e47aff;
+    -webkit-animation: .4s linear;
+    animation: .4s linear;
+    mix-blend-mode: multiply
+}
+
+.cursor-dot .body.dark,body.dark .cursor {
+    background-color: #e789ff;
+    mix-blend-mode: difference
+}
+
+body.dark .cursor {
+    border-color: #e789ff
+}
+
+body.dark .cursor-dot {
+    background-color: #e789ff;
+    mix-blend-mode: difference
+}
+
+
+
+#logo {
+    width: 110px; /* Adjust based on your logo size */
+    height: 110px;
+}
+
+nav a {
+    margin: 0 5rem;
+    text-decoration: none;
+    color: #807e7e;
+    padding: 1rem 1.5rem;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+nav a:hover {
+    background-color: #FFDAB9;
+}
+
+main section {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color:#fd8f8f;
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700; /* This is the bold weight for Montserrat */
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #666666; /* The purple shade in the name */
+}
+
+p {
+    color: #fd8f8f;
+    font-family: 'Lato', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: 400; /* Regular weight for Lato */
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between; /* space out the two main columns */
+    align-items: center; /* center content vertically */
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left; /* align the text to the left */
+    padding-right: 20px; /* some space between the text and the image */
+    margin-left: 29px;
+}
+
+.heroImg {
+    flex: 1;
+    text-align: right; /* align the image to the right */
+    padding-left: 20px; /* some space between the image and the text */
+}
+
+.heroImg img {
+    width: 500px;
+    height: 540px;
+    border-radius: 0%;
+    margin-bottom: -200px;
+    margin-right: 196px;
+    border-radius: 50%;
+
+}
+
+
+
+
+
+.heroImg::before {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);  /* Adjust as needed */
+    height: calc(100% + 20px); /* Adjust as needed */
+    background-color: #FFDAB9; /* Adjust to desired color */
+    clip-path: circle(35% at 80% 20%);
+    z-index: -1;  /* To push it behind the image */
+    top: -10px;   /* Adjust based on your needs */
+    left: 45px;  /* Adjust based on your needs */
+}
+
+.heroImg::after {
+    content: '';
+    position: absolute;
+    width: calc(100% + 20px);  /* Adjust as needed */
+    height: calc(100% + 20px); /* Adjust as needed */
+    background-color: #FFDAB9; /* Adjust to desired color */
+    clip-path: circle(40% at 10% 85%);  /* Positioned for lower left corner */
+    z-index: -1;  /* To push it behind the image */
+    bottom: -50px;   /* Adjust based on your needs */
+    left: -5px;  /* Adjust based on your needs */
+}
+
+
+.heroImg p {
+    margin: 10px 0;
+}
+
+.heroImg button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+.heroImg button:hover {
+    background-color: #faf6f6;
+}
