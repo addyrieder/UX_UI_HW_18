@@ -189,4 +189,14 @@ p {
 
 .heroImg button:hover {
     background-color: #faf6f6;
+    /* My UX Skills section coded using CSS flex */
+.flexContainer {
+    display: flex;
+    justify-content: space-between; /* Evenly space the child divs */
+}
+
+.flexContainer > div {
+    width: 33%; /* Each div takes up 33% of the container width */
+    margin: 0 1%; /* Add margin for spacing between divs */
+    padding: 20px; /* Add padding for spacing within divs */
 }
