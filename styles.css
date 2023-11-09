@@ -11,8 +11,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
 }
 
 header {
@@ -190,17 +188,17 @@ p {
 .heroImg button:hover {
     background-color: #faf6f6;
     /* My UX Skills section coded using CSS flex */
-.flexContainer {
-    display: flex;
-    justify-content: space-between; /* Evenly space the child divs */
-}
-
-.flexContainer > div {
-    width: 33%; /* Each div takes up 33% of the container width */
-    margin: 0 1%; /* Add margin for spacing between divs */
-    padding: 20px; /* Add padding for spacing within divs */
-   
-}
+    .flexContainer {
+        display: flex;
+        justify-content: space-between; /* Evenly space the child divs */
+        flex-wrap: wrap; /* Allows for wrapping items to the next line */
+    }
+    
+    .flexContainer > div {
+        flex-basis: calc(33% - 2%); /* Each div takes up 33% minus margins */
+        margin: 1%; /* Add margin for spacing between divs */
+        padding: 20px; /* Add padding for spacing within divs */
+    }
 
 #work-section {
     background-color: #f3f3f3; /* This matches the light background of your site */
@@ -210,10 +208,11 @@ p {
   }
   
   #work-section h1 {
-    color: #222; /* Assuming your headings are a darker color */
+    color: #222;
     margin-bottom: 30px;
-    font-family: 'Your Font', sans-serif; /* Replace with your actual font family */
-  }
+    /* Corrected font-family to a valid one if necessary */
+    font-family: 'Montserrat', sans-serif; /* Replaced 'Your Font' with 'Montserrat' */
+}
   
   .work-container {
     max-width: 1200px;
