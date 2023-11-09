@@ -201,3 +201,81 @@ p {
     padding: 20px; /* Add padding for spacing within divs */
    
 }
+
+#work-section {
+    background-color: #f3f3f3; /* This matches the light background of your site */
+    color: #333; /* A neutral color for text */
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  #work-section h1 {
+    color: #222; /* Assuming your headings are a darker color */
+    margin-bottom: 30px;
+    font-family: 'Your Font', sans-serif; /* Replace with your actual font family */
+  }
+  
+  .work-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* This will space your project items nicely */
+    gap: 20px; /* Adds space between items */
+  }
+  
+  .work-item {
+    width: calc(33.333% - 20px); /* Three items per row, accounting for gap */
+    margin-bottom: 20px;
+    background-color: #fff; /* A contrasting color for item background */
+    border: 1px solid #ccc; /* To match your light and clean design */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* A subtle shadow to lift the items off the page */
+  }
+  
+  .work-image {
+    width: 100%;
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 1px solid #ccc; /* Separates image from text */
+  }
+  
+  .work-info {
+    padding: 15px;
+  }
+  
+  .work-info h2 {
+    font-size: 1.25rem;
+    color: #222; /* Darker color for project titles */
+    margin-bottom: 10px;
+  }
+  
+  .work-info p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .work-btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #007bff; /* A blue that could fit your color scheme */
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease; /* For a hover effect */
+  }
+  
+  .work-btn:hover {
+    background-color: #0056b3; /* A darker blue for hover state */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .work-item {
+      width: calc(50% - 20px); /* 2 items per row on smaller screens */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .work-item {
+      width: 100%; /* Full width items on very small screens */
+    }
+  }
+  
