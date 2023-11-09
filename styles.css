@@ -214,6 +214,20 @@ p {
     font-family: 'Montserrat', sans-serif; /* Replaced 'Your Font' with 'Montserrat' */
 }
   
+#work-section2 h1 {
+    color: #222;
+    margin-bottom: 30px;
+    /* Corrected font-family to a valid one if necessary */
+    font-family: 'Montserrat', sans-serif; /* Replaced 'Your Font' with 'Montserrat' */
+}
+ 
+#work-section3 h1 {
+    color: #222;
+    margin-bottom: 30px;
+    /* Corrected font-family to a valid one if necessary */
+    font-family: 'Montserrat', sans-serif; /* Replaced 'Your Font' with 'Montserrat' */
+}
+  
   .work-container {
     max-width: 1200px;
     margin: 0 auto;
