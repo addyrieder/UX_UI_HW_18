@@ -107,9 +107,9 @@ h1 {
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
-    color: #666666; /* The purple shade in the name */
+    color: #fd8f8f; /* The purple shade in the name */
 }
 
 p {
