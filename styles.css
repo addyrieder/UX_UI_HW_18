@@ -208,27 +208,27 @@ p {
 
 #work-section {
     background-color: #f3f3f3; /* This matches the light background of your site */
-    color: #333; /* A neutral color for text */
+    color: #fd8f8f; /* A neutral color for text */
     text-align: center;
     padding: 50px 0;
   }
   
   #work-section h1 {
-    color: #222;
+    color: #fd8f8f;
     margin-bottom: 30px;
     /* Corrected font-family to a valid one if necessary */
     font-family: 'Montserrat', sans-serif; /* Replaced 'Your Font' with 'Montserrat' */
 }
   
 #work-section2 h1 {
-    color: #222;
+    color: #fd8f8f;
     margin-bottom: 30px;
     /* Corrected font-family to a valid one if necessary */
     font-family: 'Montserrat', sans-serif; /* Replaced 'Your Font' with 'Montserrat' */
 }
  
 #work-section3 h1 {
-    color: #222;
+    color: #fd8f8f;
     margin-bottom: 30px;
     /* Corrected font-family to a valid one if necessary */
     font-family: 'Montserrat', sans-serif; /* Replaced 'Your Font' with 'Montserrat' */
