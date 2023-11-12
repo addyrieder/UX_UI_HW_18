@@ -99,6 +99,7 @@ h1, h2, h3, h4, h5, h6 {
     color:#fd8f8f;
     font-family: 'Montserrat', sans-serif; 
     font-weight: 700; /* This is the bold weight for Montserrat */
+    font-size: 38px;
 }
 
 h1 {
