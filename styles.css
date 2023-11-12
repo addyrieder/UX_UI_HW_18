@@ -7,7 +7,8 @@ body {
     font-family: 'Roboto Mono', sans-serif;
     background: #fce7d5;
     margin: 0;
-    padding: 80px 0 0; /* Adjusted to add padding at the top */
+    padding: 80px 0 0;
+    padding-top: 100px; 
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,6 +89,10 @@ nav a:hover {
 
 main section {
     text-align: center;
+}
+
+main, .main-content {
+    padding-top: 100px;
 }
 
 h1, h2, h3, h4, h5, h6 {
